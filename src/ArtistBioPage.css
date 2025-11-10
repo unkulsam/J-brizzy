@@ -1,0 +1,194 @@
+.artist-bio-page {
+  font-family: "Helvetica Neue", sans-serif;
+  max-width: 100%;
+  margin: auto;
+  background-color: rgba(9, 13, 252, 0.219);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.socials {
+  display: flex; /* Enables horizontal layout */
+  gap: 10px; /* Adds spacing between links */
+}
+
+.socials a {
+  text-decoration: none;
+  display: inline-block; /* Ensures links behave like blocks but stay inline */
+}
+
+.cover-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-header {
+  text-align: center;
+  margin-top: 60px;
+  color: #f1f1f1;
+}
+
+.artist-header h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 0.2rem;
+  border-bottom: 4px solid green;
+}
+
+.artist-header p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: green;
+}
+
+.artist-bio {
+  margin-top: 2rem;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.dateofbirth,
+.about {
+  flex: 1 1 45%;
+  padding: 20px;
+  text-align: center;
+  background-color: #3286be;
+  border-radius: 8px;
+  color: white;
+}
+.dateofbirth {
+  box-shadow: 0 1px 12px 1px black;
+}
+.about {
+  box-shadow: 0 1px 12px 1px black;
+  text-align: center;
+  padding: 20px;
+  flex: 1 1 100%;
+  width: auto;
+}
+
+.artist-footer {
+  background-color: #82afcc;
+  box-shadow: 0 1px 12px 1px black;
+  margin-top: 2rem;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.artist-info {
+  text-align: center;
+  padding: 20px;
+  flex: 1 1 100%;
+  width: auto;
+}
+.developer {
+  text-align: center;
+  padding: 20px;
+  flex: 1 1 100%;
+  width: auto;
+}
+.artist-footer h2 {
+  margin-bottom: 1rem;
+}
+
+.artist-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.artist-footer li {
+  margin-bottom: 0.5rem;
+}
+
+.artist-footer a {
+  color: #180bd3;
+  text-decoration: none;
+}
+.artist-info,
+.developer {
+  flex: 1 1 45%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+}
+
+@media (max-width: 748px) {
+  .artist-bio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dateofbirth,
+  .about {
+    width: 100%;
+    margin-left: 0;
+  }
+  .artist-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .artist-info,
+  .developer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .artist-header h1 {
+    font-size: 2rem;
+  }
+
+  .artist-header p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .artist-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .artist-header p {
+    font-size: 0.9rem;
+  }
+
+  .artist-bio {
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+  }
+
+  .dateofbirth,
+  .about,
+  .artist-info,
+  .developer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .cover-container {
+    height: 300px;
+  }
+
+  .socials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socials a {
+    font-size: 0.9rem;
+  }
+}
