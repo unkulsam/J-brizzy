@@ -56,7 +56,7 @@
 .header-logo {
   font-size: 1.25rem;
   font-weight: 700;
-  background: linear-gradient(to right, white, blue);
+  background: linear-gradient(to bottom, white, blue);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -194,8 +194,10 @@
 /* Projects Section */
 .projects-section {
   position: relative;
-  background: linear-gradient(to bottom, #0cca1cd3, #a59caf, #0785da);
+  background: linear-gradient(to bottom right, #0cca1cd3, #a59caf, #0785da);
   padding: 4rem 1.5rem;
+  inset: 0;
+  backdrop-filter: blur(4px);
 }
 
 .section-container {
