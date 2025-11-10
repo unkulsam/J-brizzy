@@ -2,7 +2,7 @@
 .gallery-page {
   min-height: 100vh;
   padding: 4rem 1.5rem;
-  background: linear-gradient(to bottom, #c0dfc8, #2735b8);
+  background: linear-gradient(to bottom right, #dce0dd);
   position: relative;
   overflow: hidden;
 }

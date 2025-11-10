@@ -318,8 +318,10 @@
 /* Bio Section */
 .bio-section {
   position: relative;
-  background-color: #0785da;
+  background: linear-gradient(to bottom right, #010a03, #161933);
   padding: 4rem 1.5rem;
+  inset: 0;
+  backdrop-filter: blur(14px);
 }
 
 .bio-card {
@@ -388,7 +390,7 @@
 /* Contact Section */
 .contact-section {
   position: relative;
-  background: linear-gradient(to bottom, #a59caf, #0785da);
+  background: linear-gradient(to bottom left, #161933, #010a03);
   padding: 4rem 1.5rem;
 }
 
